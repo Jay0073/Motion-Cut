@@ -4,9 +4,9 @@ body {
     height: 100vh;
     background-color: #f0f0f0;
     display: flex;
-    justify-content: center;
-    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);}
-
+    justify-content: center;background-color: rgba(139, 131, 195, 0.61);
+    backdrop-filter: blur(5px);
+}
 
 .container {
     display: flex;
@@ -60,7 +60,8 @@ input {
     margin: 10px 0;
     border: 1px solid #9c5353;
     border-radius: 4px;
-    background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);}
+    background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+}
 
 .password-container {
     position: relative;
