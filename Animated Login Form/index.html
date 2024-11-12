@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div id="ball-container"></div>
+        <div class="login-container conts" id="loginin">
+            <h2>Login</h2>
+            <input id="loginUsername" type="text" placeholder="Username" required />
+            <div class="password-container">
+                <input id="loginPassword" type="password" placeholder="Password" required />
+                <i id="toggleLoginPassword" class="fas fa-eye"></i>
+            </div>
+            <a href="#" class="forgot-password">Forgot password?</a>
+            <button onclick="validateLoginForm()">Login</button>
+            <div class="signup-link">
+                Don't have an account? <a href="#" onclick="toggleDivs()">Sign up</a>
+            </div>
+            <p>or login with</p>
+            <div class="social-icons">
+                <i class="sds fab fa-google"></i>
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-linkedin"></i>
+            </div>
+        </div>
+
+        <div class="signUp-container conts" id="signup">
+            <h2>Sign Up</h2>
+            <input id="signUpUsername" type="text" placeholder="Username" required />
+            <input id="signUpEmail" type="email" placeholder="Email" required />
+            <div class="password-container" style="margin-bottom: 20px;">
+                <input id="signUpPassword" type="password" placeholder="Password" required />
+                <i id="toggleSignUpPassword" class="fas fa-eye"></i>
+            </div>
+            <button onclick="validateSignUpForm()">Sign Up</button>
+            <div class="signup-link">
+                Already have an account? <a href="#" onclick="toggleDivs()">Login</a>
+            </div>
+            <p>or sign in with</p>
+            <div class="social-icons">
+                <i class="sds fab fa-google"></i>
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-linkedin"></i>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="bouncingBalls.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+</body>
+
+</html>
