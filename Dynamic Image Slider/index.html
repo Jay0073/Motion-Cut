@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sliding Image</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div id="background-container"></div>
+  <div class="container" id="container">
+    <div class="slider" id="slider">
+      <div class="slide" style="
+            background-image: url('https://fixthephoto.com/blog/UserFiles/nature-photography.jpg');">
+        <div class="content">
+          <h1>DOFLAMINGO</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores,
+            iure?
+          </p>
+        </div>
+      </div>
+      <div class="slide" style="
+            background-image: url('https://fixthephoto.com/blog/UserFiles/wildlife-photography.jpg');">
+        <div class="content">
+          <h1>LION</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores,
+            iure?
+          </p>
+        </div>
+      </div>
+      <div class="slide" style="
+            background-image: url('https://fixthephoto.com/blog/UserFiles/photography-nature.jpg');">
+        <div class="content">
+          <h1>
+            RED PANDA
+          </h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Dolores, iure?
+          </p>
+        </div>
+      </div>
+    </div>
+    <button class="arrow left-arrow" onclick="prevSlide()">
+      <img src="/leftarrow.svg" alt="left" />
+    </button>
+    <button class="arrow right-arrow" onclick="nextSlide()">
+      <img src="/rightarrow.svg" alt="right" />
+    </button>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
