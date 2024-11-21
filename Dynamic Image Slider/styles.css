@@ -12,6 +12,7 @@ body {
   position: absolute;
   left: 0;
   right: 0;
+  background-color: black;
 }
 
 #background-container {
@@ -21,6 +22,7 @@ body {
   filter: blur(8px);
   background-size: cover;
   background-position: center;
+  transition: opacity 0.3s ease-out;
 }
 
 .container {
@@ -35,7 +37,7 @@ body {
 
 .slider {
   display: flex;
-  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
 }
 
 .slide {
@@ -93,5 +95,3 @@ h1, p {
       display: none;
   }
 }
-
-
