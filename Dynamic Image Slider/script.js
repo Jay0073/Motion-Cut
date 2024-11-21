@@ -1,5 +1,6 @@
 let currentSlide = 0;
 const slides = document.querySelectorAll(".slide");
+const background = document.getElementById("background-container");
 const totalSlides = slides.length;
 
 function showSlide(index) {
@@ -10,15 +11,17 @@ function showSlide(index) {
   } else {
     currentSlide = index;
   }
-
+  
   const slider = document.getElementById("slider");
   slider.style.transform = `translateX(-${currentSlide * 100}%)`;
-
-  // Update body background image
-  const currentBackground = slides[currentSlide].style.backgroundImage;
-  // document.body.style.backgroundImage = currentBackground;
-  document.getElementById("background-container").style.backgroundImage =
-    currentBackground;
+  
+  background.style.opacity = 0; 
+  
+  setTimeout(() => {  
+    const currentBackground = slides[currentSlide].style.backgroundImage; 
+    background.style.backgroundImage = currentBackground; 
+    background.style.opacity = 1; 
+  }, 500); 
 }
 
 function nextSlide() {
