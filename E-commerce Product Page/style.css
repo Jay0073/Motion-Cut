@@ -1,16 +1,111 @@
-.searchbar {
-    width: calc(30% - 20px);
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #9c5353;
-    border-radius: 4px;
-    background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
-    position: relative;
+* {
+    padding: 0;
+    margin: 0;
 }
 
-#search {
+.navContainer {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 13px 5px 20px -7px rgba(0, 0, 0, 0.75);
+    background: #d07878;
+    padding: 10px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.catogories ul {
+    display: flex;
+    border: 1px solid;
+    gap: 4vw;
+}
+
+.catogories ul li {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+}
+
+.search {
+    position: relative;
+    display: flex;
+}
+
+.search input {
+    all: unset;
+    border: 2px solid rgb(189, 171, 171);
+    border-radius: 20px;
+    padding: 10px;
+    color: white;
+    &::placeholder{
+        color: white;
+    }
+}
+
+.search img {
     position: absolute;
-    left: 10px;
-    top: 50%;
-    transform: translateY(-30%);
+    right: 19px;
+    bottom: 11px;
+}
+
+.login {
+    all: unset;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: red;
+    color: white;
+}
+
+.last {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;   
+}
+
+.count {
+    width: 22px;
+    height: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: -32px 0px 0px -10px;
+    border-radius: 50%;
+    background-color: red;
+    color: white;
+}
+
+@media (max-width: 1100px) {
+    .catogories {
+        display: none;
+    }
+}
+
+@media (max-width: 650px) {
+    .search input {
+        display: none;
+    }
+    .last p {
+        display: none;
+    }
+    .search img {
+        top: -8px;
+    }
+    .navContainer {
+        justify-content: space-between;
+    }
 }
