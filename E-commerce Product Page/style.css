@@ -4,7 +4,7 @@
 }
 
 html {
-  background-color: #e2e2e2;
+  background-color: #ffffff;
 }
 
 .navContainer {
@@ -329,9 +329,113 @@ button svg {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 50px;
+  gap: 6vw;
   margin: 20px 0;
 }
+
+.product-details {
+  padding: 0 5%;
+}
+
+.product-details ul {
+  padding: 0 2%;
+}
+
+.product-pics {
+  padding: 0 5%;
+}
+
+.product-pics .pics {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* to be removed */
+.product-reviews {
+  padding: 0 5%;
+  display: flex;
+  gap: 50px;
+}
+
+.product-reviews .review-stars {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fill-full {
+  background-color: #ffb005;
+}
+
+.rating {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+
+}
+
+.rating .rate {
+  border: 1px solid #ffb005;
+  width: 140px;
+  height: 10px;
+  border-radius: 10px;
+}
+
+.reviews .review-head {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+.review-head img {
+  width: 50px;
+}
+
+.reviews p {
+  padding: 10px 30px;
+}
+
+
+.footer-container {
+  background-color: #d07878;
+}
+
+.footer {
+  width: 80%;
+  padding: 80px 10%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 100px;
+}
+
+.footer h3{
+  margin: 20px auto;
+}
+
+.last-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+
+.last-logo button {
+  all: unset;
+    background-color: red;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+
 
 @media (max-width: 1147px) {
   .catogories {
@@ -358,13 +462,31 @@ button svg {
 
   .add-to-cart button {
     text-align: center;
+    margin: 0 auto;
+    width: 250px;
   }
 
+  .product-reviews {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+}
+
+@media (max-width: 380px) {
+  .login {
+    display: none;
+  }
 }
 
 @media (max-width: 750px) {
   .search input {
     display: none;
+  }
+
+  .slide {
+    height: 400px;
   }
   .last p {
     display: none;
