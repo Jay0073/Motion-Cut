@@ -14,7 +14,7 @@ html {
   justify-content: space-around;
   align-items: center;
   box-shadow: 13px 5px 20px -7px rgba(0, 0, 0, 0.75);
-  background: #d07878;
+  background: #8FB996;
   padding: 10px;
   z-index: 2;
 }
@@ -32,7 +32,6 @@ html {
 }
 
 #bigs {
-  color: rgb(162, 27, 27);
   font-size: 2rem;
   padding-bottom: 0px;
 }
@@ -63,14 +62,14 @@ html {
 
 .search input {
   all: unset;
-  border: 2px solid rgb(189, 171, 171);
+  border: 2px solid #415D43;
   border-radius: 20px;
   padding: 10px;
-  color: white;
+  background-color: #aecfc4;
   &::placeholder {
-    color: white;
+    color: #415D43;
   }
-}
+} 
 
 .search img {
   position: absolute;
@@ -81,10 +80,10 @@ html {
 
 .last {
   all: unset;
-  color: white;
+  color: rgb(255, 255, 255);
   padding: 10px 10px;
   border-radius: 10px;
-  background-color: red;
+  background-color: #415D43;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -209,7 +208,7 @@ html {
 }
 
 .price .offer {
-  background-color: #d07878;
+  background-color: #A1CCA5;
   padding: 5px;
   border-radius: 10px;
 }
@@ -237,7 +236,7 @@ html {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  border: 1px solid black;
+  border: 1px solid rgb(90, 90, 90);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -252,16 +251,16 @@ html {
 }
 
 .color .a {
-  background-color: black;
+  background-color: rgb(0, 0, 0);
 }
 .color .b {
-  background-color: brown;
+  background-color: rgb(37, 80, 129);
 }
 .color .c {
-  background-color: yellow;
+  background-color: rgb(225, 218, 191);
 }
 .color .d {
-  background-color: blue;
+  background-color: rgb(183, 145, 107);
 }
 
 .quantity-container {
@@ -270,7 +269,8 @@ html {
   align-items: center;
   width: 60px;
   padding: 5px;
-  border-radius: 20px;
+  border-radius: 30px;
+  border: 1px solid rgb(79, 79, 79);
 }
 
 .product-container h4 {
@@ -292,7 +292,7 @@ button svg {
 
 .wishlist-button {
   all: unset;
-  background-color: red;
+  background-color: #415D43;
   color: white;
   display: flex;
   justify-content: center;
@@ -315,7 +315,7 @@ button svg {
   all: unset;
   width: 300px;
   height: 44px;
-  background-color: red;
+  background-color: #415D43;
   color: white;
   padding: 10px;
   border-radius: 30px;
@@ -330,7 +330,11 @@ button svg {
   align-items: center;
   flex-wrap: wrap;
   gap: 6vw;
-  margin: 20px 0;
+  margin: 50px 0;
+}
+
+.product-pics .pics img {
+  max-width: 100%;
 }
 
 .product-details {
@@ -386,6 +390,7 @@ button svg {
   border-radius: 10px;
 }
 
+
 .reviews .review-head {
   display: flex;
   justify-content: flex-start;
@@ -400,18 +405,97 @@ button svg {
   padding: 10px 30px;
 }
 
+#review-head {
+  padding: 0 5%;
+}
+
+.recommends {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px 5%;
+  gap: 10px;
+  overflow-x: scroll;
+}
+
+.recommends h2 {
+  margin: 20px 0;
+}
+
+.similar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  padding-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 17px 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.similar .img {
+  background-image: url('./Assets/brown-leather-shoes.jpg');
+  min-width: 180px;
+  height: 175px;
+  background-size: contain;
+  background-position: center;
+  position: relative;
+  background-repeat: no-repeat;
+}
+
+
+.similar-review-stars .similar-stars {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50px;
+  height: 20px;
+}
+
+.similar-stars img {
+  height: 16px;
+}
+
+
+.similar-text .price {
+  position: relative;
+  display: flex;
+}
+
+.similar-text .price h4 {
+  color: rgb(90, 90, 90);
+  position: relative;
+}
+
+.similar-text .price h4 hr {
+  height: 2px;
+  width: 90%;
+  background-color: rgb(90, 90, 90);
+  border: none;
+  border-radius: 10px;
+  position: absolute;
+  top: 10px;
+  left: 1px;
+}
+
+
 
 .footer-container {
-  background-color: #d07878;
+  background-color: #8FB996;
 }
 
 .footer {
   width: 80%;
   padding: 80px 10%;
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 100px;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 17%;
+}
+
+.footer li {
+  list-style: none;
 }
 
 .footer h3{
@@ -428,14 +512,20 @@ button svg {
 
 .last-logo button {
   all: unset;
-    background-color: red;
+    background-color: #415D43;
     color: white;
     padding: 10px;
     border-radius: 10px;
 }
 
+button:hover {
+  background-color: #111D13;
+  cursor: pointer;
+}
 
-
+.catogories li, #down, .color, .similar-text {
+  cursor: pointer;
+}
 
 @media (max-width: 1147px) {
   .catogories {
@@ -478,6 +568,13 @@ button svg {
   .login {
     display: none;
   }
+
+  .wishlist-button {
+    min-width: 100px;
+  }
+  .wishlist-button p{
+    display: none;
+  }
 }
 
 @media (max-width: 750px) {
@@ -499,6 +596,10 @@ button svg {
   }
   .arrow {
     display: none;
+  }
+
+  .add-to-cart button {
+    width: 220px;
   }
 }
 
